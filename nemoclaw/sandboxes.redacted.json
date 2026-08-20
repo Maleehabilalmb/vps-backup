@@ -1,0 +1,87 @@
+{
+  "defaultSandbox": "openclaw-dev",
+  "defaultSelectionRevision": 9,
+  "sandboxes": {
+    "openclaw-dev": {
+      "name": "openclaw-dev",
+      "createdAt": "2026-08-13T12:05:11.256Z",
+      "provider": "openrouter-api",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "endpointUrl": "https://openrouter.ai/api/v1",
+      "endpointSource": null,
+      "credentialEnv": "OPENROUTER_API_KEY",
+      "preferredInferenceApi": "openai-completions",
+      "compatibleEndpointReasoning": null,
+      "compatibleEndpointReasoningEffort": null,
+      "nimContainer": null,
+      "gpuEnabled": false,
+      "hostGpuDetected": false,
+      "sandboxGpuEnabled": false,
+      "sandboxGpuMode": "auto",
+      "sandboxGpuDevice": null,
+      "sandboxGpuProof": null,
+      "openshellDriver": "docker",
+      "openshellVersion": "0.0.85",
+      "policies": [
+        "npm",
+        "pypi",
+        "huggingface",
+        "brew",
+        "brave",
+        "github",
+        "openclaw-pricing",
+        "whatsapp"
+      ],
+      "policyTier": "balanced",
+      "webSearchEnabled": true,
+      "toolDisclosure": "progressive",
+      "observabilityEnabled": false,
+      "webSearchProvider": "brave",
+      "agent": null,
+      "agentVersion": "2026.7.1",
+      "nemoclawVersion": "0.0.103",
+      "fromDockerfile": null,
+      "hermesAuthMethod": null,
+      "imageTag": "nemoclaw-sandbox-local:openclaw-dev-1786622618987",
+      "dashboardPort": 18789,
+      "gatewayName": "nemoclaw",
+      "gatewayPort": 8080,
+      "policyPresetsFinalized": true,
+      "messaging": {
+        "schemaVersion": 1,
+        "plan": {
+          "schemaVersion": 1,
+          "sandboxName": "openclaw-dev",
+          "agent": "openclaw",
+          "workflow": "onboard",
+          "disabledChannels": [],
+          "networkPolicy": {
+            "presets": [
+              "whatsapp"
+            ],
+            "entries": [
+              {
+                "channelId": "whatsapp",
+                "presetName": "whatsapp",
+                "policyKeys": [
+                  "whatsapp"
+                ],
+                "source": "manifest"
+              }
+            ]
+          },
+          "channels": [
+            {
+              "channelId": "whatsapp",
+              "active": true,
+              "configured": true,
+              "disabled": false,
+              "inputs": []
+            }
+          ],
+          "credentialBindings": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+*.sqlite*
+.env
+*.key
+*.pem
+*token*
+*secret*
+.git-credentials

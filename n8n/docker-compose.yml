@@ -1,0 +1,14 @@
+  services:
+    n8n:
+      image: n8nio/n8n:2.33.7
+      restart: unless-stopped
+      mem_limit: 2g
+      ports: ["127.0.0.1:5678:5678"]
+      environment:
+        - N8N_HOST=vmi3496339.tailba7d32.ts.net
+        - N8N_PROTOCOL=https
+        - WEBHOOK_URL=https://vmi3496339.tailba7d32.ts.net
+        - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY}
+        - EXECUTIONS_DATA_PRUNE=true
+        - EXECUTIONS_DATA_MAX_AGE=336
+      volumes: ["/opt/n8n_data:/home/node/.n8n"]
