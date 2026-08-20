@@ -1,0 +1,5 @@
+Linger=yes
+enabled
+/n8n-n8n-1:unless-stopped
+/openshell-openclaw-dev-6a0be7c2-4656-4187-80f6-d4ecf9c6d237:unless-stopped
+/recursing_nightingale:no
